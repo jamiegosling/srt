@@ -1362,6 +1362,8 @@ if (ENABLE_APPS)
 	endif()
 	srt_add_application(srt-file-transmit ${VIRTUAL_srtsupport})
 
+	srt_add_application(tx ${VIRTUAL_srtsupport})
+
 	if (MINGW)
 		# FIXME: with MINGW, it fails to build apps that require C++11
 		# https://github.com/Haivision/srt/issues/177
